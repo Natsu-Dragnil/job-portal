@@ -1,0 +1,15 @@
+# Redirect all requests to public/index.php if no file/folder is matched
+RewriteEngine On
+
+# Prevent directory listing
+Options -Indexes
+
+# Redirect to public folder by default
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^$ public/ [L]
+
+# Disable execution of dangerous file types site-wide
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|bash|env|php[345]?)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
