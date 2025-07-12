@@ -12,45 +12,38 @@ This portal allows:
 
 job-portal/
 ├── admin/
-│ ├── login.php
-│ ├── dashboard.php
 │ ├── add_job.php
-│ ├── edit_job.php
-│ ├── delete_job.php
-│ ├── toggle_status.php
 │ ├── applicants.php
-│ └── export_csv.php
+│ ├── dashboard.php
+│ ├── delete_job.php
+│ ├── edit_job.php
+│ ├── export_applicants.php
+│ ├── export_csv.php
+│ ├── login.php
+│ ├── logout.php
+│ ├── toggle_status.php
 │
 ├── public/
 │ ├── index.php
 │ ├── job.php
-│ └── apply.php
+│ ├── apply.php
 │
 ├── config/
-│ └── db.php
+│ └── db.php # DB connection
 │
 ├── uploads/
-│ └── resumes/
+│ └── resumes/ # Uploaded PDF resumes
 │
 ├── assets/
 │ ├── css/
-│ │ └── style.css
-│ └── js/
-│ └── main.js
+│ │ └── style.css # Custom CSS styling
+│ ├── js/
+│ │ └── main.js # Optional JS interactivity
+│ └── image/
+│ └── bg.jpg
 │
-├── sql/
-│ └── job_portal.sql
-│
-├── .htaccess
-├── index.php
-└── README.md
-
----
-
-## 📦 Clone or Download
-
-git clone https://github.com/Natsu-Dragnil/job-portal.git
-cd job-portal
+├── .htaccess # Security and routing
+├── README.md
 
 ---
 
