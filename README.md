@@ -1,6 +1,6 @@
 # 🧑‍💼 Job Application Portal
 
-A web-based Job Application Portal built using PHP, MySQL, JavaScript, HTML, and CSS.
+A web-based Job Application Portal built using PHP, MySQL, HTML, and CSS.
 
 This portal allows:
 - Admins to post, manage, and review job listings and applicants.
@@ -10,40 +10,38 @@ This portal allows:
 
 ## 📂 File Structure
 
-job-portal/
-├── admin/
-│ ├── add_job.php
-│ ├── applicants.php
-│ ├── dashboard.php
-│ ├── delete_job.php
-│ ├── edit_job.php
-│ ├── export_applicants.php
-│ ├── export_csv.php
-│ ├── login.php
-│ ├── logout.php
-│ ├── toggle_status.php
-│
-├── public/
-│ ├── index.php
-│ ├── job.php
-│ ├── apply.php
-│
-├── config/
-│ └── db.php # DB connection
-│
-├── uploads/
-│ └── resumes/ # Uploaded PDF resumes
-│
-├── assets/
-│ ├── css/
-│ │ └── style.css # Custom CSS styling
-│ ├── js/
-│ │ └── main.js # Optional JS interactivity
-│ └── image/
-│ └── bg.jpg
-│
-├── .htaccess # Security and routing
-├── README.md
+job-portal/  
+├── admin/  
+│ ├── add_job.php  
+│ ├── applicants.php  
+│ ├── dashboard.php  
+│ ├── delete_job.php  
+│ ├── edit_job.php  
+│ ├── export_applicants.php  
+│ ├── export_csv.php  
+│ ├── login.php  
+│ ├── logout.php  
+│ ├── toggle_status.php  
+│  
+├── public/  
+│ ├── index.php  
+│ ├── job.php  
+│ ├── apply.php  
+│  
+├── config/  
+│ └── db.php # DB connection  
+│  
+├── uploads/  
+│ └── resumes/ # Uploaded PDF resumes  
+│  
+├── assets/  
+│ ├── css/  
+│ │ └── style.css # Custom CSS styling  
+│ └── image/  
+│   └── bg.jpg  
+│  
+├── .htaccess # Security and routing  
+├── README.md  
 
 ---
 
@@ -69,7 +67,7 @@ job-portal/
 4. **Admin Login**
    - URL: `http://localhost/job-portal/admin/login.php`
    - Username: `admin`
-   - Password: `admin123` (hardcoded for simplicity)
+   - Password: `admin123` (hardcoded in login form for simplicity)
 
 ---
 
@@ -88,7 +86,7 @@ job-portal/
 - Detailed job view
 - Apply to jobs with name, email, phone, resume (PDF only)
 - Prevent duplicate applications (same email per job)
-- AJAX-based application form
+- Application form with server-side validation and submission
 
 ### 🖌️ UI Design
 - Clean and responsive CSS (`assets/css/style.css`)
@@ -137,7 +135,8 @@ job-portal/
 Built for practical experience in:
 - PHP & MySQL backend logic
 - File handling and validation
-- Frontend interactivity with JavaScript & AJAX
+- Frontend fully rendered with HTML and styled using CSS
+- All interactivity handled on the server side using PHP.
 - Clean modular coding structure
 
 ---
